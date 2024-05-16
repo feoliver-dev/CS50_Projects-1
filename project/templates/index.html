@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="header">
+    <h1>What is Goth?</h1>
+    <h2>Welcome stranger and babybats!</h2>
+</div>
+<br>
+
+<div class="container-fluid">
+    <p>
+        Goth as a word, came from the “godo”, which were referred to a member of a Germanic people, and now, referred to the subculture. It started to be used in the meaning we have nowadays after the outcome of the Goth music. That’s why it’s a music-based subculture, but it’s also related to the gothic arts. This subculture, different from culture(cause here you can’t choose, you’re influenced), is about sharing  enjoyment, excitement about the same subjects, interests, ideas(that also reflect their thoughts in politics). That also reflects in the aesthetic, but Goth is not about the outside, it’s about this sharing we’ve just talked about. Now that you know what you are looking at, check the subjects in the menu to delve deeper in this subject.
+    </p>
+</div>
+
+<br>
+
+<div class="card-deck">
+    <div class="card">
+      <img class="card-img-top" src="https://i.pinimg.com/564x/85/88/d6/8588d6acab5912976efeed85141d292f.jpg" alt="history cap">
+      <div class="card-body">
+        <p class="card-text">Learn about gothic historical aspects.</p>
+        <a href="{{ url_for('history') }}" class="btn btn-dark ">History</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img class="card-img-top" src="https://i.pinimg.com/564x/d6/16/ce/d616cef7b85e5755dab82c41624095f7.jpg" alt="art cap">
+      <div class="card-body">
+        <p class="card-text">Check out the 7 gothic and goth arts!</p>
+        <a href="{{ url_for('art') }}" class="btn btn-dark">Art</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img class="card-img-top" src="https://i.pinimg.com/564x/dd/1b/7e/dd1b7e669b563aa6fc45f8dd10be66d5.jpg" alt="fashion cap">
+      <div class="card-body">
+        <p class="card-text">Get to know  goth styles of expression.</p>
+        <a href="{{ url_for('fashion') }}" class="btn btn-dark">Fashion</a>
+      </div>
+    </div>
+  </div>
+{% endblock %}
