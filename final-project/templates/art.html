@@ -1,0 +1,79 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="header-art">
+    <h1>Art</h1>
+    <h2>Choose one of the 7 arts to start.</h2>
+</div>
+<br>
+
+<div class="row">
+  <main class="cards">
+
+    <section class="card">
+      <div class="icon">
+        <img src="https://i.pinimg.com/564x/36/f0/f6/36f0f66052c6cf411d3d3f2c8afe2e00.jpg" alt="architecture">
+      </div>
+      <div class="card-body">
+        <a href="{{ url_for('architecture') }}" class="btn btn-light btn-sm btn-block">Architecture</a>
+      </div>
+    </section>
+
+    <section class="card">
+      <div class="icon">
+        <img src="https://i.pinimg.com/564x/3c/de/e6/3cdee6e0f25d8ce29e9292ef1c7817bd.jpg" alt="cinema">
+      </div>
+      <div class="card-body">
+        <a href="{{ url_for('cinema') }}" class="btn btn-light btn-sm btn-block">Cinema</a>
+      </div>
+    </section>
+
+    <section class="card">
+      <div class="icon">
+        <img src="https://i.pinimg.com/564x/3c/a4/6e/3ca46e47854f51f843505d31c3e4cd1b.jpg" alt="dance">
+      </div>
+      <div class="card-body">
+        <a href="{{ url_for('dance') }}" class="btn btn-light btn-sm btn-block">Dance</a>
+      </div>
+    </section>
+
+    <section class="card">
+      <div class="icon">
+        <img src="https://i.pinimg.com/564x/2d/53/7f/2d537fb8b753c816f3f462e6a87dc5b4.jpg" alt="literature">
+      </div>
+      <div class="card-body">
+        <a href="{{ url_for('literature') }}" class="btn btn-light btn-sm btn-block">Literature</a>
+      </div>
+    </section>
+
+    <section class="card">
+      <div class="icon">
+        <img src="https://i.pinimg.com/564x/a5/a2/fc/a5a2fcdd7fece4231137c6fd0cd77049.jpg" alt="music">
+      </div>
+      <div class="card-body">
+        <a href="{{ url_for('music') }}" class="btn btn-light btn-sm btn-block">Music</a>
+      </div>
+    </section>
+
+    <section class="card">
+      <div class="icon">
+        <img src="https://i.pinimg.com/564x/c8/7b/e8/c87be87a6e3d2db2bfb76fbc682cacdc.jpg" alt="painting">
+      </div>
+      <div class="card-body">
+        <a href="{{ url_for('painting') }}" class="btn btn-light btn-sm btn-block"> Painting </a>
+      </div>
+    </section>
+
+    <section class="card">
+      <div class="icon">
+        <img src="https://i.pinimg.com/564x/da/2b/5b/da2b5bfec8490620fbba7c26273cec6d.jpg" alt="sculpture">
+      </div>
+      <div class="card-body">
+        <a href="{{ url_for('sculpture') }}" class="btn btn-light btn-sm btn-block">Sculpture</a>
+      </div>
+    </section>
+  </main>
+</div>
+
+
+{% endblock %}
